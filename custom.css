@@ -13,9 +13,9 @@ main {
   --color-prettylights-syntax-string: #0a3069;
   --color-prettylights-syntax-variable: #953800;
   --color-prettylights-syntax-brackethighlighter-unmatched: #82071e;
-  --color-prettylights-syntax-invalid-illegal-text: #f6f8fa;
+  --color-prettylights-syntax-invalid-illegal-text: #a7bdd9;
   --color-prettylights-syntax-invalid-illegal-bg: #82071e;
-  --color-prettylights-syntax-carriage-return-text: #f6f8fa;
+  --color-prettylights-syntax-carriage-return-text: #a7bdd9;
   --color-prettylights-syntax-carriage-return-bg: #cf222e;
   --color-prettylights-syntax-string-regexp: #116329;
   --color-prettylights-syntax-markup-list: #3b2300;
@@ -35,7 +35,7 @@ main {
   --color-prettylights-syntax-sublimelinter-gutter-mark: #8c959f;
   --color-prettylights-syntax-constant-other-reference-link: #0a3069;
   --color-btn-text: #24292f;
-  --color-btn-bg: #f6f8fa;
+  --color-btn-bg: #a7bdd9;
   --color-btn-border: rgb(31 35 40 / 15%);
   --color-btn-shadow: 0 1px 0 rgb(31 35 40 / 4%);
   --color-btn-inset-shadow: inset 0 1px 0 rgb(255 255 255 / 25%);
@@ -44,7 +44,7 @@ main {
   --color-btn-active-bg: hsl(220deg 14% 93% / 100%);
   --color-btn-active-border: rgb(31 35 40 / 15%);
   --color-btn-selected-bg: hsl(220deg 14% 94% / 100%);
-  --color-btn-primary-text: #fff;
+  --color-btn-primary-text: #b0c4de;
   --color-btn-primary-bg: #1f883d;
   --color-btn-primary-border: rgb(31 35 40 / 15%);
   --color-btn-primary-shadow: 0 1px 0 rgb(31 35 40 / 10%);
@@ -58,15 +58,15 @@ main {
   --color-btn-primary-disabled-border: rgb(31 35 40 / 15%);
   --color-action-list-item-default-hover-bg: rgb(208 215 222 / 32%);
   --color-segmented-control-bg: #eaeef2;
-  --color-segmented-control-button-bg: #fff;
+  --color-segmented-control-button-bg: #b0c4de;
   --color-segmented-control-button-selected-border: #8c959f;
   --color-fg-default: #1F2328;
   --color-fg-muted: #656d76;
   --color-fg-subtle: #6e7781;
   --color-canvas-default: #b0c4de;
   --color-canvas-overlay: #b0c4de;
-  --color-canvas-inset: #f6f8fa;
-  --color-canvas-subtle: #f6f8fa;
+  --color-canvas-inset: #a7bdd9;
+  --color-canvas-subtle: #a7bdd9;
   --color-border-default: #d0d7de;
   --color-border-muted: hsl(210deg 18% 87% / 100%);
   --color-neutral-muted: rgb(175 184 193 / 20%);
@@ -82,12 +82,12 @@ main {
   --color-danger-muted: rgb(255 129 130 / 40%);
   --color-danger-subtle: #ffebe9;
   --color-primer-shadow-inset: inset 0 1px 0 rgb(208 215 222 / 20%);
-  --color-scale-gray-1: #eaeef2;
-  --color-scale-blue-1: #b6e3ff;
+  --color-scale-blue-1: #9bb0c9;
+  --color-scale-orange-1: #ffdfb6;
 
   /*! Extensions from @primer/css/alerts/flash.scss */
-  --color-social-reaction-bg-hover: var(--color-scale-gray-1);
-  --color-social-reaction-bg-reacted-hover: var(--color-scale-blue-1);
+  --color-social-reaction-bg-hover: var(--color-scale-blue-1);
+  --color-social-reaction-bg-reacted-hover: var(--color-scale-orange-1);
 }
 
 main .pagination-loader-container {
