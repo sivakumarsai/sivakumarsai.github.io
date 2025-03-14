@@ -15,6 +15,7 @@ jobs:
       uses: actions/checkout@v4
       with:
         fetch-depth: 0 
+        date-only: true
     
     - name: Generate the sitemap
       id: sitemap
