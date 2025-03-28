@@ -24,6 +24,14 @@
 	display: table;
 	clear: both;
 	}
+	td, th {
+	text-align: left;
+	padding: 8px;
+	width:25%;
+	}
+	tr:nth-child(odd) {
+	background-color: darkseagreen;
+	}
 	</style>
   </head>
   <body style="background-color:palegreen;">
@@ -37,138 +45,107 @@
 		  <img src="favicon.ico" alt="favicon.ico" width="200">
 		</div>
 		<div class="column" style="width: 70%">
-		  <p>quiz</p>
+		  <p>Inspired by the quiz <a href = "https://math.jhu.edu/~savitt/GTM.html">Which Springer-Verlag Graduate Text in Mathematics are you?</a></p>
 		</div>
 	  </div>
       <section>
 		<h1>QUIZ</h1>
-		<FORM NAME="f">
+		<FORM NAME="quiz">
 		<table border=0 cellpadding=3 cellspacing=0>
-		<tr><td colspan=2 class="question">You are lost in a forest.  What do you do?</td></tr>
+		<tr><td colspan=4 class="question">Of the following vacation ideas, which suits you most?</td></tr>
 		<tr><td>
-			<INPUT TYPE="radio" NAME="forest" VALUE="1"> Navigate your way to safety using the sun as a compass.<BR>
-			<INPUT TYPE="radio" NAME="forest" VALUE="2"> Keep wandering -- you'll find your way out eventually!<BR>
+			<INPUT TYPE="radio" NAME="1" VALUE="1"> Stay at home and get some rest.<BR>
 		</td><td>
-			<INPUT TYPE="radio" NAME="forest" VALUE="3"> Sit and wait for a search party to find you.<BR>
-			<INPUT TYPE="radio" NAME="forest" VALUE="4"> I'm not lost in a forest, I'm sitting at my computer.<BR>
-		</td></tr>
-		<tr><td colspan=2 class="question">At the grocery store, do you:</td></tr>
-		<tr><td>
-			<INPUT TYPE="radio" NAME="grocery" VALUE="1"> have a carefully established route and routine?<BR>
-			<INPUT TYPE="radio" NAME="grocery" VALUE="2"> stop frequently to compare for bargain and value?<BR>
+			<INPUT TYPE="radio" NAME="1" VALUE="2"> Catch up with friends and family.<BR>
 		</td><td>
-			<INPUT TYPE="radio" NAME="grocery" VALUE="3"> try to get in and get out as quickly as possible?<BR>
-			<INPUT TYPE="radio" NAME="grocery" VALUE="4"> grouse loudly about the packs of ten hot dogs and eight buns?<BR>
-		</td></tr>
-		<tr><td colspan=2 class="question">What sort of colours do you prefer?</td></tr>
-		<tr><td>
-			<INPUT TYPE="radio" NAME="colour" VALUE="1"> Bright colours.<BR>
-			<INPUT TYPE="radio" NAME="colour" VALUE="2"> Pastel shades.<BR>
+			<INPUT TYPE="radio" NAME="1" VALUE="3"> Travel to a place you've always wanted to visit.<BR>
 		</td><td>
-			<INPUT TYPE="radio" NAME="colour" VALUE="3"> Muted earthy tones.<BR>
-			<INPUT TYPE="radio" NAME="colour" VALUE="4"> Black and white.<BR>
+			<INPUT TYPE="radio" NAME="1" VALUE="4"> Vacations are not for me.<BR>
 		</td></tr>
 
-
-		<tr><td colspan=2 class="question">Which of the following historic sites would you most like to visit?
-		</td></tr>
+		<tr><td colspan=4 class="question">How the majority of your clothes are stored?</td></tr>
 		<tr><td>
-			<INPUT TYPE="radio" NAME="wonders" VALUE="1">The Great Pyramid of Giza<BR>
-			<INPUT TYPE="radio" NAME="wonders" VALUE="2">The Taj Mahal<BR>
+			<INPUT TYPE="radio" NAME="2" VALUE="1"> They are on hangers.<BR>
 		</td><td>
-			<INPUT TYPE="radio" NAME="wonders" VALUE="3">Stonehenge<BR>
-			<INPUT TYPE="radio" NAME="wonders" VALUE="4">The Alhambra<BR>
+			<INPUT TYPE="radio" NAME="2" VALUE="2"> They are folded.<BR>
+		</td><td>
+			<INPUT TYPE="radio" NAME="2" VALUE="3"> They form pile(s).<BR>
+		</td><td>
+			<INPUT TYPE="radio" NAME="2" VALUE="4"> They are placed on hooks/pegs.<BR>
 		</td></tr>
 
-
-		<tr><td colspan=2 class="question">In my morning newspaper, I always take a look at:</td></tr>
+		<tr><td colspan=4 class="question">Which one of the following side gigs would you do?</td></tr>
 		<tr><td>
-			<INPUT TYPE="radio" NAME="enjoy" VALUE="1">The crossword<BR>
-			<INPUT TYPE="radio" NAME="enjoy" VALUE="2">The comics<BR>
+			<INPUT TYPE="radio" NAME="3" VALUE="1"> Cooking food.<BR>
 		</td><td>
-			<INPUT TYPE="radio" NAME="enjoy" VALUE="3">The bridge column<BR>
-			<INPUT TYPE="radio" NAME="enjoy" VALUE="4">The chess column<BR>
+			<INPUT TYPE="radio" NAME="3" VALUE="2"> Tutoring.<BR>
+		</td><td>
+			<INPUT TYPE="radio" NAME="3" VALUE="3"> Being a car mechanic.<BR>
+		</td><td>
+			<INPUT TYPE="radio" NAME="3" VALUE="4"> Selling your own art.<BR>
 		</td></tr>
-		<tr><td colspan=2 class="button"><INPUT TYPE="button" VALUE="What Springer graduate text am I?" onClick="process();"></td></tr>
+
+		<tr><td colspan=4 class="question">Which of the following matches your feelings on jaywalking the most?</td></tr>
+		<tr><td>
+			<INPUT TYPE="radio" NAME="4" VALUE="1"> It is generally unsafe to jaywalk.<BR>
+		</td><td>
+			<INPUT TYPE="radio" NAME="4" VALUE="2"> If the roads seem clear, why not?<BR>
+		</td><td>
+			<INPUT TYPE="radio" NAME="4" VALUE="3"> Pythagoras would be proud.<BR>
+		</td><td>
+			<INPUT TYPE="radio" NAME="4" VALUE="4"> If someone hits me, it's on them.<BR>
+		</td></tr>
+
+		<tr><td colspan=4 class="question">Which of the following sports is the least interesting?</td></tr>
+		<tr><td>
+			<INPUT TYPE="radio" NAME="5" VALUE="1"> Pickleball.<BR>
+		</td><td>
+			<INPUT TYPE="radio" NAME="5" VALUE="2"> Disc golf.<BR>
+		</td><td>
+			<INPUT TYPE="radio" NAME="5" VALUE="3"> Race walking.<BR>
+		</td><td>
+			<INPUT TYPE="radio" NAME="5" VALUE="4"> Slap fighting.<BR>
+		</td></tr>
+
+		<tr><td colspan=4 class="question">What is the fastest way to contact you?</td></tr>
+		<tr><td>
+			<INPUT TYPE="radio" NAME="6" VALUE="1"> Call or text.<BR>
+		</td><td>
+			<INPUT TYPE="radio" NAME="6" VALUE="2"> By email.<BR>
+		</td><td>
+			<INPUT TYPE="radio" NAME="6" VALUE="3"> In real life.<BR>
+		</td><td>
+			<INPUT TYPE="radio" NAME="6" VALUE="4"> Via social media.<BR>
+		</td></tr>
+
+		<tr><td colspan=4 class="question">You are in line to purchase a treat after a day's hard work and someone skips you in line. You...</td></tr>
+		<tr><td>
+			<INPUT TYPE="radio" NAME="7" VALUE="1"> tell them where the end of the line is.<BR>
+		</td><td>
+			<INPUT TYPE="radio" NAME="7" VALUE="2"> take no action.<BR>
+		</td><td>
+			<INPUT TYPE="radio" NAME="7" VALUE="3"> say "Sorry, I was waiting in line here."<BR>
+		</td><td>
+			<INPUT TYPE="radio" NAME="7" VALUE="4"> pretend to be in a phone call with someone and complain about the line-skipper.<BR>
+		</td></tr>
+
+		<tr><td colspan=4 class="question">Which of the following pranks would you be the least happy to be a victim of?</td></tr>
+		<tr><td>
+			<INPUT TYPE="radio" NAME="8" VALUE="1"> Getting pied.<BR>
+		</td><td>
+			<INPUT TYPE="radio" NAME="8" VALUE="2"> A sudden jump scare.<BR>
+		</td><td>
+			<INPUT TYPE="radio" NAME="8" VALUE="3"> Your salt and sugar have been interchanged.<BR>
+		</td><td>
+			<INPUT TYPE="radio" NAME="8" VALUE="4"> Waking up from a nap with writing all over your face.<BR>
+		</td></tr>
+		<tr><td colspan=4 class="button"><INPUT TYPE="button" VALUE="What MSC2020 Classification Am I?" onClick="process();"></td></tr>
 		</table>
 		</FORM>
 		<script language="JavaScript">
-		<!--
 		function process()
 		{
-			var maclane = 0;
-			var serrecia = 0;
-			var kelley = 0;
-			var hirsch = 0;
-			var serrelrfg = 0;
-			var hartshorne = 0;
-			var bollobas = 0;
-			var serrelf = 0;
-			var forster = 0;
-			var botttu = 0;
-			var irlrosen = 0;
-			var silverman = 0;
-			var lang = 0;
-			var massey = 0;
-			var fultharr = 0;
-			var eisenbud = 0;
-
-			var f = document.f;
-			var i = 0;
-
-			for (i = 0; i < f.forest.length; i++) if (f.forest[i].checked) value = f.forest[i].value;
-			if (value == "1") { kelley++; hirsch++; hartshorne++; forster++; botttu++; silverman++; massey++; eisenbud++; }
-			if (value == "2") { kelley++; hirsch++; hartshorne++; forster++; botttu++; silverman++; massey++; eisenbud++; }
-			if (value == "3") { maclane++; serrecia++; serrelrfg++; bollobas++; serrelf++; irlrosen++; lang++; fultharr++; }
-			if (value == "4") { maclane++; serrecia++; serrelrfg++; bollobas++; serrelf++; irlrosen++; lang++; fultharr++; }
-
-			for (i = 0; i < f.grocery.length; i++) if (f.grocery[i].checked) value = f.grocery[i].value;
-			if (value == "1") { maclane++; kelley++; bollobas++; forster++; irlrosen++; lang++; massey++; eisenbud++; }
-			if (value == "2") { maclane++; kelley++; bollobas++; forster++; irlrosen++; lang++; massey++; eisenbud++; }
-			if (value == "3") { serrecia++; hirsch++; serrelrfg++; hartshorne++; serrelf++; botttu++; silverman++; fultharr++; }
-			if (value == "4") { serrecia++; hirsch++; serrelrfg++; hartshorne++; serrelf++; botttu++; silverman++; fultharr++; }
-
-			for (i = 0; i < f.colour.length; i++) if (f.colour[i].checked) value = f.colour[i].value;
-			if (value == "1") { maclane++; kelley++; serrelrfg++; hartshorne++; lang++; massey++; eisenbud++; }
-			if (value == "2") { serrecia++; hirsch++; bollobas++; serrelf++; forster++; botttu++; irlrosen++; silverman++; fultharr++; }
-			if (value == "3") { serrecia++; hirsch++; bollobas++; serrelf++; forster++; botttu++; irlrosen++; silverman++; fultharr++; }
-			if (value == "4") { maclane++; kelley++; serrelrfg++; hartshorne++; lang++; massey++; eisenbud++; }
-
-			for (i = 0; i < f.enjoy.length; i++) if (f.enjoy[i].checked) value = f.enjoy[i].value;
-			if (value == "1") { maclane++; kelley++; hirsch++; serrelrfg++; bollobas++; forster++; botttu++; massey++; fultharr++; }
-			if (value == "3") { serrecia++; hartshorne++; serrelf++; irlrosen++; silverman++; lang++; eisenbud++; }
-			if (value == "2") { maclane++; kelley++; hirsch++; serrelrfg++; bollobas++; forster++; botttu++; massey++; fultharr++;}
-			if (value == "4") { serrecia++; hartshorne++; serrelf++; irlrosen++; silverman++; lang++; eisenbud++; }
-
-			for (i = 0; i < f.wonders.length; i++) if (f.wonders[i].checked) value = f.wonders[i].value;
-			if (value == "1") { maclane++; serrelrfg++; serrelf++; hartshorne++; botttu++; silverman++; lang++; massey++; fultharr++; eisenbud++;  }
-			if (value == "3") { maclane++; serrelrfg++; serrelf++; hartshorne++; botttu++; silverman++; lang++; massey++; fultharr++; eisenbud++;  }
-			if (value == "2") { serrecia++; kelley++; hirsch++; bollobas++; forster++; irlrosen++;  }
-			if (value == "4") { serrecia++; kelley++; hirsch++; bollobas++; forster++; irlrosen++; }
-
-			var out = "maclane";
-			i = maclane;
-			if (bollobas > i) { out = "bollobas"; i = bollobas; }
-			if (serrecia > i) { out = "serrecia"; i = serrecia; }
-			if (hirsch > i) { out = "lickorish"; i = hirsch; }
-			if (kelley > i) { out = "doob"; i = kelley; }
-			if (eisenbud > i) { out = "eisenbud"; i = eisenbud; }
-			if (forster > i) { out = "warner"; i = forster; }
-			if (irlrosen > i) { out = "irlrosen"; i = irlrosen; }
-			if (serrelf > i) { out = "wash"; i = serrelf; }
-			if (hartshorne > i) { out = "hartshorne"; i = hartshorne; }
-			if (botttu > i) { out = "harris"; i = botttu; }
-			if (serrelrfg > i) { out = "serrelrfg"; i = serrelrfg; }
-			if (silverman > i) { out = "silverman"; i = silverman; }
-			if (lang > i) { out = "lang"; i = lang; }
-			if (massey > i) { out = "massey"; i = massey; }
-			if (fultharr > i) { out = "fultharr"; i = fultharr; }
-
-			result = ;
-		}
-		function err(msg, url, line)
-		{
-				result = "error";
+			result = 0;
 		}
 		</script>
       </section>
