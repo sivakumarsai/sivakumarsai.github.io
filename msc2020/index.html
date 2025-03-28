@@ -42,14 +42,13 @@
       </header>
 	  	  <div class="row">
 		<div class="column" style="width: 30%">
-		  <img src="favicon.ico" alt="favicon.ico" width="200">
+		  <img src="amc.png" alt="amc.png" height="180">
 		</div>
 		<div class="column" style="width: 70%">
-		  <p>Inspired by the quiz <a href = "https://math.jhu.edu/~savitt/GTM.html">Which Springer-Verlag Graduate Text in Mathematics are you?</a></p>
+		  <p id="output"></p>
 		</div>
 	  </div>
       <section>
-		<h1>QUIZ</h1>
 		<FORM NAME="quiz">
 		<table border=0 cellpadding=3 cellspacing=0>
 		<tr><td colspan=4 class="question">Of the following vacation ideas, which suits you most?</td></tr>
@@ -139,15 +138,58 @@
 		</td><td>
 			<INPUT TYPE="radio" NAME="8" VALUE="4"> Waking up from a nap with writing all over your face.<BR>
 		</td></tr>
-		<tr><td colspan=4 class="button"><INPUT TYPE="button" VALUE="What MSC2020 Classification Am I?" onClick="process();"></td></tr>
+		<tr><td colspan=1 class="button"><INPUT TYPE="button" VALUE="What MSC2020 Classification Am I?" onClick="classify();"></td><td colspan=3><p id="top"></p></td></tr>
 		</table>
 		</FORM>
 		<script language="JavaScript">
-		function process()
-		{
-			result = 0;
+		async function classify() {
+			const csv = await fetch("https://sivakumarsai.github.io/msc2020/MSC_2020.csv");
+			const data = await csv.text();
+			const first = classes(data);
+			const second = subclasses(data, "03");
+			const third = trueclasses(data, "03C");
+			const all = reread(data);
+			document.getElementById('output').textContent = "You are: " + third[4];
+			document.getElementById('top').textContent = "Your result is at the top of the page!";
+        }
+		function reread(str) {
+			const regex = /"(.*?)"/g;
+			const result = [];
+			let hit;
+			while ((hit = regex.exec(str))) {
+				result.push(hit.pop());
+			}
+			return result;
+		}
+		function classes(str) {
+			const regex = /"(\d\d-XX?)"/g;
+			const result = [];
+			let hit;
+			while ((hit = regex.exec(str))) {
+				result.push(hit.pop());
+			}
+			return result;
+		}
+		function subclasses(str, first) {
+			const regex = new RegExp("\"(" + first + "[A-Z]xx?)\"","g");
+			const result = [];
+			let hit;
+			while ((hit = regex.exec(str))) {
+				result.push(hit.pop());
+			}
+			return result;			
+		}
+		function trueclasses(str, second) {
+			const regex = new RegExp("\"(" + second + "\\d\\d?)\"","g");
+			const result = [];
+			let hit;
+			while ((hit = regex.exec(str))) {
+				result.push(hit.pop());
+			}
+			return result;			
 		}
 		</script>
+		<p>Inspired by the quiz <a href = "https://math.jhu.edu/~savitt/GTM.html">Which Springer-Verlag Graduate Text in Mathematics are you?</a></p>
       </section>
       <footer>
         <p><small>Return to <a href="https://sivakumarsai.github.io">main page</a><br>Hosted on GitHub Pages&emsp;Last updated: <script language="JavaScript">document.write(document.lastModified);</script></small></p>
