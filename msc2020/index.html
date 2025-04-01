@@ -44,8 +44,9 @@
 		<div class="column" style="width: 30%">
 		  <img src="amc.png" alt="amc.png" height="180">
 		</div>
-		<div class="column" style="width: 70%">
+		<div class="column" style="width: 50%">
 		  <p id="output"></p>
+		  <p id="output2"></p>
 		</div>
 	  </div>
       <section>
@@ -53,103 +54,137 @@
 		<table border=0 cellpadding=3 cellspacing=0>
 		<tr><td colspan=4 class="question">Of the following vacation ideas, which suits you most?</td></tr>
 		<tr><td>
-			<INPUT TYPE="radio" NAME="1" VALUE="1"> Stay at home and get some rest.<BR>
+			<INPUT TYPE="radio" NAME="vacation" VALUE=-3> Stay at home and get some rest.<BR>
 		</td><td>
-			<INPUT TYPE="radio" NAME="1" VALUE="2"> Catch up with friends and family.<BR>
+			<INPUT TYPE="radio" NAME="vacation" VALUE=-2> Catch up with friends and family.<BR>
 		</td><td>
-			<INPUT TYPE="radio" NAME="1" VALUE="3"> Travel to a place you've always wanted to visit.<BR>
+			<INPUT TYPE="radio" NAME="vacation" VALUE=-1> Travel to a place you've always wanted to visit.<BR>
 		</td><td>
-			<INPUT TYPE="radio" NAME="1" VALUE="4"> Vacations are not for me.<BR>
+			<INPUT TYPE="radio" NAME="vacation" VALUE=0> Vacations are not for me.<BR>
 		</td></tr>
 
 		<tr><td colspan=4 class="question">How are the majority of your clothes stored?</td></tr>
 		<tr><td>
-			<INPUT TYPE="radio" NAME="2" VALUE="1"> They are on hangers.<BR>
+			<INPUT TYPE="radio" NAME="clothes" VALUE=-3> They are on hangers.<BR>
 		</td><td>
-			<INPUT TYPE="radio" NAME="2" VALUE="2"> They are folded.<BR>
+			<INPUT TYPE="radio" NAME="clothes" VALUE=-2> They are folded.<BR>
 		</td><td>
-			<INPUT TYPE="radio" NAME="2" VALUE="3"> They form pile(s).<BR>
+			<INPUT TYPE="radio" NAME="clothes" VALUE=-1> They form pile(s).<BR>
 		</td><td>
-			<INPUT TYPE="radio" NAME="2" VALUE="4"> They are placed on hooks/pegs.<BR>
+			<INPUT TYPE="radio" NAME="clothes" VALUE=0> They are placed on hooks/pegs.<BR>
 		</td></tr>
 
 		<tr><td colspan=4 class="question">Which one of the following side gigs would you do?</td></tr>
 		<tr><td>
-			<INPUT TYPE="radio" NAME="3" VALUE="1"> Cooking food.<BR>
+			<INPUT TYPE="radio" NAME="gigs" VALUE=-3> Cooking food.<BR>
 		</td><td>
-			<INPUT TYPE="radio" NAME="3" VALUE="2"> Tutoring.<BR>
+			<INPUT TYPE="radio" NAME="gigs" VALUE=-2> Tutoring.<BR>
 		</td><td>
-			<INPUT TYPE="radio" NAME="3" VALUE="3"> Being a car mechanic.<BR>
+			<INPUT TYPE="radio" NAME="gigs" VALUE=-1> Being a car mechanic.<BR>
 		</td><td>
-			<INPUT TYPE="radio" NAME="3" VALUE="4"> Selling your own art.<BR>
+			<INPUT TYPE="radio" NAME="gigs" VALUE=0> Selling your own art.<BR>
 		</td></tr>
 
 		<tr><td colspan=4 class="question">Which of the following matches your feelings on jaywalking the most?</td></tr>
 		<tr><td>
-			<INPUT TYPE="radio" NAME="4" VALUE="1"> It is generally unsafe to jaywalk.<BR>
+			<INPUT TYPE="radio" NAME="jaywalking" VALUE=-3> It is generally unsafe to jaywalk.<BR>
 		</td><td>
-			<INPUT TYPE="radio" NAME="4" VALUE="2"> If the roads seem clear, why not?<BR>
+			<INPUT TYPE="radio" NAME="jaywalking" VALUE=-2> If the roads seem clear, why not?<BR>
 		</td><td>
-			<INPUT TYPE="radio" NAME="4" VALUE="3"> Pythagoras would be proud.<BR>
+			<INPUT TYPE="radio" NAME="jaywalking" VALUE=-1> Pythagoras would be proud.<BR>
 		</td><td>
-			<INPUT TYPE="radio" NAME="4" VALUE="4"> If someone hits me, it's on them.<BR>
+			<INPUT TYPE="radio" NAME="jaywalking" VALUE=0> If someone hits me, it's on them.<BR>
 		</td></tr>
 
 		<tr><td colspan=4 class="question">Which of the following sports is the least interesting?</td></tr>
 		<tr><td>
-			<INPUT TYPE="radio" NAME="5" VALUE="1"> Pickleball.<BR>
+			<INPUT TYPE="radio" NAME="sports" VALUE=-3> Pickleball.<BR>
 		</td><td>
-			<INPUT TYPE="radio" NAME="5" VALUE="2"> Disc golf.<BR>
+			<INPUT TYPE="radio" NAME="sports" VALUE=-2> Disc golf.<BR>
 		</td><td>
-			<INPUT TYPE="radio" NAME="5" VALUE="3"> Race walking.<BR>
+			<INPUT TYPE="radio" NAME="sports" VALUE=-1> Race walking.<BR>
 		</td><td>
-			<INPUT TYPE="radio" NAME="5" VALUE="4"> Slap fighting.<BR>
+			<INPUT TYPE="radio" NAME="sports" VALUE=0> Slap fighting.<BR>
 		</td></tr>
 
 		<tr><td colspan=4 class="question">What is the fastest way to contact you?</td></tr>
 		<tr><td>
-			<INPUT TYPE="radio" NAME="6" VALUE="1"> Call or text.<BR>
+			<INPUT TYPE="radio" NAME="contact" VALUE=-3> Call or text.<BR>
 		</td><td>
-			<INPUT TYPE="radio" NAME="6" VALUE="2"> By email.<BR>
+			<INPUT TYPE="radio" NAME="contact" VALUE=-2> By email.<BR>
 		</td><td>
-			<INPUT TYPE="radio" NAME="6" VALUE="3"> In real life.<BR>
+			<INPUT TYPE="radio" NAME="contact" VALUE=-1> In real life.<BR>
 		</td><td>
-			<INPUT TYPE="radio" NAME="6" VALUE="4"> Via social media.<BR>
+			<INPUT TYPE="radio" NAME="contact" VALUE=0> Via social media.<BR>
 		</td></tr>
 
 		<tr><td colspan=4 class="question">You are in line to purchase a treat after a day's hard work and someone skips you in line. You...</td></tr>
 		<tr><td>
-			<INPUT TYPE="radio" NAME="7" VALUE="1"> tell them where the end of the line is.<BR>
+			<INPUT TYPE="radio" NAME="line" VALUE=-3> tell them where the end of the line is.<BR>
 		</td><td>
-			<INPUT TYPE="radio" NAME="7" VALUE="2"> take no action.<BR>
+			<INPUT TYPE="radio" NAME="line" VALUE=-2> take no action.<BR>
 		</td><td>
-			<INPUT TYPE="radio" NAME="7" VALUE="3"> say "Sorry, I was waiting in line here."<BR>
+			<INPUT TYPE="radio" NAME="line" VALUE=-1> say "Sorry, I was waiting in line here."<BR>
 		</td><td>
-			<INPUT TYPE="radio" NAME="7" VALUE="4"> pretend to be in a phone call with someone and complain about the line-skipper.<BR>
+			<INPUT TYPE="radio" NAME="line" VALUE=0> pretend to be in a phone call with someone and complain about the line-skipper.<BR>
 		</td></tr>
 
-		<tr><td colspan=4 class="question">Which of the following pranks would you be the least happy to be a victim of?</td></tr>
+		<!--<tr><td colspan=4 class="question">Which of the following pranks would you be the least happy to be a victim of?</td></tr>
 		<tr><td>
-			<INPUT TYPE="radio" NAME="8" VALUE="1"> Getting pied.<BR>
+			<INPUT TYPE="radio" NAME="prank" VALUE=-3> Getting pied.<BR>
 		</td><td>
-			<INPUT TYPE="radio" NAME="8" VALUE="2"> A sudden jump scare.<BR>
+			<INPUT TYPE="radio" NAME="prank" VALUE=-2> A sudden jump scare.<BR>
 		</td><td>
-			<INPUT TYPE="radio" NAME="8" VALUE="3"> Your salt and sugar have been interchanged.<BR>
+			<INPUT TYPE="radio" NAME="prank" VALUE=-1> Your salt and sugar have been interchanged.<BR>
 		</td><td>
-			<INPUT TYPE="radio" NAME="8" VALUE="4"> Waking up from a nap with writing all over your face.<BR>
-		</td></tr>
-		<tr><td colspan=1 class="button"><INPUT TYPE="button" VALUE="What MSC2020 Classification Am I?" onClick="classify();"></td><td colspan=3><p id="top"></p></td></tr>
+			<INPUT TYPE="radio" NAME="prank" VALUE=0> Waking up from a nap with writing all over your face.<BR>
+		</td></tr> -->
+		<tr><td colspan=1 class="button"><INPUT TYPE="button" VALUE="What MSC2020 Classification Am I?" onClick="test();"></td><td colspan=3><p id="top"></p></td></tr>
 		</table>
 		</FORM>
 		<script language="JavaScript">
+		function test() {
+			var quiz = document.quiz;
+			if ((!quiz.vacation[0].checked && !quiz.vacation[1].checked && !quiz.vacation[2].checked && !quiz.vacation[3].checked) || (!quiz.clothes[0].checked && !quiz.clothes[1].checked && !quiz.clothes[2].checked && !quiz.clothes[3].checked) || (!quiz.gigs[0].checked && !quiz.gigs[1].checked && !quiz.gigs[2].checked && !quiz.gigs[3].checked) || (!quiz.jaywalking[0].checked && !quiz.jaywalking[1].checked && !quiz.jaywalking[2].checked && !quiz.jaywalking[3].checked) || (!quiz.sports[0].checked && !quiz.sports[1].checked && !quiz.sports[2].checked && !quiz.sports[3].checked) || (!quiz.contact[0].checked && !quiz.contact[1].checked && !quiz.contact[2].checked && !quiz.contact[3].checked) || (!quiz.line[0].checked && !quiz.line[1].checked && !quiz.line[2].checked && !quiz.line[3].checked)) {
+				document.getElementById('top').textContent = "Please answer all of the questions!";
+			} else {
+			classify();
+			}
+		}
 		async function classify() {
+			var quiz = document.quiz;
+			var i = 0;
+			
+			var index = 63;
+			for (i = 0; i < 4; i++) if (quiz.vacation[i].checked) index = index + (15.75 * quiz.vacation[i].value);
+			for (i = 0; i < 4; i++) if (quiz.clothes[i].checked) index = index + (3.9375 * quiz.clothes[i].value);
+			for (i = 0; i < 4; i++) if (quiz.gigs[i].checked) index = index + (0.984375 * quiz.gigs[i].value);
+			
 			const csv = await fetch("https://sivakumarsai.github.io/msc2020/MSC_2020.csv");
 			const data = await csv.text();
 			const first = classes(data);
-			const second = subclasses(data, "03");
-			const third = trueclasses(data, "03C");
+			
+			const fstr = first[Math.ceil(index)-1].substring(0,2);
+			const second = subclasses(data, fstr);
+			
+			index = second.length;
+			for (i = 0; i < 4; i++) if (quiz.jaywalking[i].checked) index = index + second.length/4 * (quiz.jaywalking[i].value);
+			for (i = 0; i < 4; i++) if (quiz.sports[i].checked) index = index + second.length/16 * (quiz.sports[i].value);
+			document.getElementById('top').textContent = index + "/" + second.length;
+			const sstr = second[Math.ceil(index)-1].substring(0,3);
+			const third = trueclasses(data, sstr);
+			
+			index = third.length;
+			for (i = 0; i < 4; i++) if (quiz.contact[i].checked) index = index + third.length/4 * (quiz.contact[i].value);
+			for (i = 0; i < 4; i++) if (quiz.line[i].checked) index = index + third.length/16 * (quiz.line[i].value);
+			const tstr = third[Math.ceil(index)-1];
+			
 			const all = reread(data);
-			document.getElementById('output').textContent = "You are: " + third[4];
+			const tstrd = all[all.indexOf(tstr) + 1];
+			const sstrd = all[all.indexOf(sstr + "xx") + 1];
+			const fstrd = all[all.indexOf(fstr + "-XX") + 1];
+			document.getElementById('output').textContent = "You are " + tstr + ": " + tstrd;
+			document.getElementById('output2').textContent = "The classification " + tstr + " belongs to the three-digit classification " + sstr + "xx: " + sstrd + ", within the two-digit classification " + fstr + "-XX: " + fstrd;
 			document.getElementById('top').textContent = "Your result is at the top of the page!";
         }
 		function reread(str) {
