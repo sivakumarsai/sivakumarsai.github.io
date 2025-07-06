@@ -24,25 +24,68 @@
 	display: table;
 	clear: both;
 	}
+	code {
+	font-size: 12px;
+	}
+	img {
+	display: block;
+	margin: auto;
+	}
 	</style>
   </head>
   <body style="background-color:peachpuff;">
     <div class="wrapper">
       <header>
         <h1>Sai Sivakumar</h1>
-		<p><a href = "https://sivakumarsai.github.io">Mathematics</a>&emsp;&emsp;&emsp;[<a href = "https://sivakumarsai.github.io/music">Music</a>]&emsp;&emsp;&emsp;<a href = "https://sivakumarsai.github.io/games">Games</a>&emsp;&emsp;&emsp;<a href = "https://sivakumarsai.github.io/msc2020">What MSC2020 Classification Am I?</a></p>
+		<p><a href = "https://sivakumarsai.github.io">Mathematics</a>&emsp;&emsp;&emsp;<a href = "https://sivakumarsai.github.io/music">Music</a>&emsp;&emsp;&emsp;<a href = "https://sivakumarsai.github.io/games">Games</a>&emsp;&emsp;&emsp;[<a href = "https://sivakumarsai.github.io/latex">LaTeX</a>]&emsp;&emsp;&emsp;<a href = "https://sivakumarsai.github.io/msc2020">What MSC2020 Classification Am I?</a></p>
       </header>
 	  <div class="row">
 		<div class="column" style="width: 30%">
-		  <p><img src="bird.jpg" alt="bird.jpg" width="200"></p>
+		  <p><img src="bird.svg" alt="bird.svg" width="200"></p>
 		</div>
 		<div class="column" style="width: 70%">
-		  <p>Brief description of TeX/LaTeX</p>
+		  <p>LaTeX is software used for typesetting documents. This page is dedicated to interesting LaTeX things in I learn about or use, and for preferences I have regarding LaTeX typesetting.</p>
 		</div>
 	  </div>
       <section>
 		<h1>Contents</h1>
-		<p>https://stackoverflow.com/questions/8424785/link-to-a-section-of-a-webpage</p>
+		<p><a href="#smallmatrices">Small matrices</a></p>
+		<p><a href="#resizedmatrices">Resized matrices</a></p>
+		
+		<div id="smallmatrices"></div>
+		<h1>Small matrices</h1>
+		<p>Matrices are typically typeset in display math mode. One option that I use to typeset matrices in inline math mode is the <code>smallmatrix</code> environment, belonging to the <code>amsmath</code> package. Below are some examples with the code that produces that output.</p>
+		<p><img src="smallmatrices\1.png" alt="1.png" height="30"></p>
+		<details><summary>Code:</summary><code>$\bigl(\!\begin{smallmatrix}a & b \\ c & d\end{smallmatrix}\!\bigr)$</code></details>
+		<p><img src="smallmatrices\2.png" alt="2.png" height="30"></p>
+		<details><summary>Code:</summary><code>Lorem ipsum dolor $\bigl(\!\begin{smallmatrix}a & b \\ c & d\end{smallmatrix}\!\bigr)$ sit amet</code></details>
+		<p><img src="smallmatrices\3.png" alt="3.png" height="107"></p>
+		<details><summary>Code:</summary><code>Lorem ipsum dolor $\bigl(\!\begin{smallmatrix}
+		a & b \\ c & d
+		\end{smallmatrix}\!\bigr)$ sit amet
+		\[\begin{pmatrix}
+		a & b \\ c & d
+		\end{pmatrix}\]</code></details>
+		
+		<div id="resizedmatrices"></div>
+		<h1>Resized matrices</h1>
+		<p>I find that matrices often have brackets that are one size too big, and entries that have too much space between them. To me, the effect is minimized in matrices with more rows and columns, and with entries that are more substantial (i.e., more than a few characters). I have experimented in the past with changing the (global, which I feel is bad practice) <code>array</code> column and row separation.</p>
+		<p><img src="resizedmatrices\1.png" alt="3.png" height="103"></p>
+		<p><img src="resizedmatrices\2.png" alt="3.png" height="96"></p>
+		<p><img src="resizedmatrices\3.png" alt="3.png" height="96"></p>
+		<details><summary>Code:</summary>The code in the first two samples is <br>
+		<code>Lorem ipsum dolor sit amet 
+		\[\begin{pmatrix}
+		a & b \\ c & d
+		\end{pmatrix}\quad \begin{bmatrix}
+		a & b \\ c & d
+		\end{bmatrix}\]</code><br>
+		but in the second and third samples, <br>
+		<code>\arraycolsep = 2pt</code><br>
+		<code>\arraycolsep = 2pt</code><br>
+		<code>\renewcommand{\arraystretch}{.8}</code><br>
+		appears in the preamble</details>
+		<p>Resizing matrices in this way can lead to some awkward looking matrices; the third sample above with the identity matrices does not look particularly good to me.</p>
       </section>
       <footer>
         <p><small>Return to <a href="https://sivakumarsai.github.io">main page</a><br>Hosted on GitHub Pages&emsp;Last updated: <script language="JavaScript">document.write(document.lastModified);</script></small></p>
